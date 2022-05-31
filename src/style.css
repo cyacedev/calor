@@ -1,0 +1,98 @@
+html {
+    background: #282a36;
+    color: #f8f8f2;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16pt;
+    text-align: left;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+}
+
+#title h1{
+    margin:0;
+}
+
+#account_button {
+    display: flex;
+    align-items: center;
+    font-size: 12pt;
+    background-color: #44475a;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#account_greeting {
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 14pt;
+    margin-top: 20px;
+    color: #6272a4;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./../lib/MaterialIcons-Regular.ttf);
+    /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(./../lib/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}

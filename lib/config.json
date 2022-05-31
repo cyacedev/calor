@@ -1,0 +1,27 @@
+{
+    "globals": {
+        "temperature_unit": "C",
+        "time_format": "24h",
+        "thresholds": [
+            {
+                "value": "0",
+                "color": "blue"
+            },
+            {
+                "value": "30",
+                "color": "orange"
+            },
+            {
+                "value": "60",
+                "color": "red"
+            }
+        ]
+    },
+    "dashboard" : [
+        {
+            "type": "circle",
+            "db_key": "test_1",
+            "title": "Test 1"    
+        }
+    ]
+}

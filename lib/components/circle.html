@@ -1,0 +1,56 @@
+<div class="card">
+    <span id="title">Placeholder</span>
+    <div class="circle">
+        <div class="circle-bg">
+            <span id="value"></span>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #title {
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid;
+    }
+
+    .circle-bg {
+        background-color: white;
+        border-radius: 50%;
+        width: 85px;
+        height: 85px;
+        margin: 7.5px;
+        text-align: center;
+        line-height: 85px;
+        font-size: 16pt;
+    }
+</style>
+
+<script>
+    function setup(title) {
+        document.querySelector("#title").innerHTML = title;
+    }
+    function updateValue(value) {
+        document.querySelector('#value').innerHTML = value + " C°";
+        Array.prototype.find(globals.thresholds, function (threshold) {
+            if (value >= threshold.min && value <= threshold.max) {
+                let color = threshold.color;
+            }
+        });
+        document.querySelector(".circle").style.backgroundImage = "conic-gradient(" + (color) + "" + (value) + "%, #44475a" + (100 - value) + "%)";
+    }
+    updateValue(0)
+</script>
